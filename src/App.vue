@@ -2,7 +2,7 @@
     <div>
         <app-navbar></app-navbar>
 
-        <div class="container">
+        <div class="container mt-3">
             <router-view></router-view>
         </div>
     </div>
