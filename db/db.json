@@ -1,0 +1,92 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Venom",
+      "description": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote",
+      "releaseDate": "2018-09-28",
+      "imagePath": "https://image.tmdb.org/t/p/w500//2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Bird Box",
+      "description": "When a mysterious force decimates the world’s population, only one thing is certain: if you see it, you take your life. Facing the unknown, Malorie finds love, hope and a new beginning only for it to unravel.",
+      "releaseDate": "2018-12-13",
+      "imagePath": "https://image.tmdb.org/t/p/w500//rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg"
+    },
+    {
+      "id": 3,
+      "title": "BlacKkKlansman",
+      "description": "Colorado Springs, late 1970s. Ron Stallworth, an African American police officer, and Flip Zimmerman, his Jewish colleague, run an undercover operation to infiltrate the Ku Klux Klan.",
+      "releaseDate": "2018-08-30",
+      "imagePath": "https://image.tmdb.org/t/p/w500//55W6mUVv4CXMMQHHhV2zXtLSpXQ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Avengers: Infinity War",
+      "description": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos.",
+      "releaseDate": "2018-04-25",
+      "imagePath": "https://image.tmdb.org/t/p/w500//7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Mission: Impossible - Fallout",
+      "description": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. ",
+      "releaseDate": "2018-08-13",
+      "imagePath": "https://image.tmdb.org/t/p/w500//AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg"
+    }
+  ],
+  "trending": [
+    {
+      "id": 1,
+      "title": "Aquaman",
+      "description": "Arthur Curry learns that he is the heir to the underwater kingdom of Atlantis, and must step forward to lead his people and be a hero to the world.",
+      "releaseDate": "2018-12-08",
+      "imagePath": "https://image.tmdb.org/t/p/w500//5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Fantastic Beasts: The Crimes of Grindelwald",
+      "description": "Gellert Grindelwald has escaped imprisonment and has begun gathering followers to his cause—elevating wizards above all non-magical beings.",
+      "releaseDate": "2018-11-14",
+      "imagePath": "https://image.tmdb.org/t/p/w500//kQKcbJ9uYkTQql2R8L4jTUz7l90.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Meg",
+      "description": "A deep sea submersible pilot revisits his past fears in the Mariana Trench, and accidentally unleashes the seventy foot ancestor of the Great White Shark believed to be extinct.",
+      "releaseDate": "2018-08-09",
+      "imagePath": "https://image.tmdb.org/t/p/w500//eyWICPcxOuTcDDDbTMOZawoOn8d.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Inception",
+      "description": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\".",
+      "releaseDate": "2010-07-15",
+      "imagePath": "https://image.tmdb.org/t/p/w500//qmDpIHrmpJINaRKAfWQfftjCdyi.jpg"
+    }
+  ],
+  "serials": [
+    {
+      "id": 1,
+      "title": "Sherlock: The Final Problem",
+      "description": "Long buried secrets finally come to light as someone has been playing a very long game indeed. Sherlock and John face their greatest ever challenge. Is the game finally over?",
+      "releaseDate": "2017-01-15",
+      "imagePath": "https://image.tmdb.org/t/p/w500//ySiqbi1sW7imVYbtECZS0xQ3Hmj.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Muppet Show",
+      "description": "Go behind the curtains as Kermit the Frog and his muppet friends struggle to put on a weekly variety show.",
+      "releaseDate": "1975-09-05",
+      "imagePath": "https://image.tmdb.org/t/p/w500//Aiv83wffJmKdmPgmnOD0vXmQjwe.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Buffy the Vampire Slayer",
+      "description": "Into every generation a slayer is born: one girl in all the world, a chosen one. She alone will wield the strength and skill to fight the vampires, demons, and the forces of darkness; to stop the spread of their evil and the swell of their number",
+      "releaseDate": "1997-03-10",
+      "imagePath": "https://image.tmdb.org/t/p/w500//41jsOEYsh9lJBc6AZqGpR1ETpx5.jpg"
+    }
+  ]
+}
