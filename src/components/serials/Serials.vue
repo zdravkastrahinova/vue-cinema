@@ -7,7 +7,7 @@
                 <div class="float-left">
                     <input v-model="searchValue"
                            class="form-control"
-                           placeholder="Enter movie title or release date...">
+                           placeholder="Enter movie title or date...">
                 </div>
 
                 <div class="float-left ml-2">
