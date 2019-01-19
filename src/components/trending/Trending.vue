@@ -7,7 +7,7 @@
                 <div class="float-left">
                     <input v-model="searchValue"
                            class="form-control"
-                           placeholder="Enter movie title...">
+                           placeholder="Enter movie title or release date...">    
                 </div>
 
                 <div class="float-left ml-2">
@@ -67,6 +67,13 @@
                 axios.get(`${constants.apiUrl}/trending?title_like=${this.searchValue}`)
                     .then(response => {
                         this.trendingMovies = response.data;
+
+                        if (!this.trendingMovies || !this.trendingMovies.length) {
+                            axios.get(`${constants.apiUrl}/trending?releaseDate_like=${this.searchValue}`)
+                                .then(response => {
+                                    this.trendingMovies = response.data;
+                                });
+                        }
                     });
             }
         }
