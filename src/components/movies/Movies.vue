@@ -5,7 +5,7 @@
                 <h3>Movies</h3>
             </div>
             <div class="col-md-2 text-right">
-                <button type="button" class="btn btn-outline-primary">Add</button>
+                <b-button variant="outline-primary">Add</b-button>
             </div>
         </div>
 
@@ -39,6 +39,7 @@
 </template>
 
 <script>
+    import moment from 'moment';
     import movieGraphqlService from '../../api/movie-graphql-service';
 
     export default {
@@ -51,6 +52,11 @@
         created() {
             movieGraphqlService.getAll((response) => {
                 this.movies = response.data.movies;
+
+                this.movies.forEach(movie => {
+                    movie.releaseDate = moment(movie.releaseDate).format(moment.HTML5_FMT.DATE);
+                });
+
             }, (error) => {
                 console.log(error);
             });
