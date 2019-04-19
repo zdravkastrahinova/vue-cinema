@@ -1,19 +1,12 @@
 <template>
     <div>
-        <h3>Movies</h3>
-
-        <div class="clearfix mt-3">
-            <form @submit.prevent="onSearch">
-                <div class="float-left">
-                    <input v-model="searchValue"
-                           class="form-control"
-                           placeholder="Enter movie title or date...">
-                </div>
-
-                <div class="float-left ml-2">
-                    <button class="btn btn-outline-secondary">Search</button>
-                </div>
-            </form>
+        <div class="row">
+            <div class="col-md-10">
+                <h3>Movies</h3>
+            </div>
+            <div class="col-md-2 text-right">
+                <button type="button" class="btn btn-outline-primary">Add</button>
+            </div>
         </div>
 
         <div v-if="!movies || !movies.length" class="text-center">
@@ -46,8 +39,7 @@
 </template>
 
 <script>
-    import axios from 'axios';
-    import constants from '../../constants';
+    import movieGraphqlService from '../../api/movie-graphql-service';
 
     export default {
         data() {
@@ -57,25 +49,11 @@
             }
         },
         created() {
-            axios.get(`${constants.apiUrl}/movies`)
-                .then(response => {
-                    this.movies = response.data;
-                });
-        },
-        methods: {
-            onSearch() {
-                axios.get(`${constants.apiUrl}/movies?title_like=${this.searchValue}`)
-                    .then(response => {
-                        this.movies = response.data;
-
-                        if (!this.movies || !this.movies.length) {
-                            axios.get(`${constants.apiUrl}/movies?releaseDate_like=${this.searchValue}`)
-                                .then(response => {
-                                    this.movies = response.data;
-                                });
-                        }
-                    });
-            }
+            movieGraphqlService.getAll((response) => {
+                this.movies = response.data.movies;
+            }, (error) => {
+                console.log(error);
+            });
         }
     }
 </script>
