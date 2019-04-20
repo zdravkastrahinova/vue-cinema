@@ -29,12 +29,22 @@
                         <p class="text-black-50 movie-description">{{ movie.description }}</p>
 
                         <div class="mt-auto d-flex justify-content-end">
-                            <b-button variant="default" class="btn-details">View details</b-button>
+                            <b-button variant="default" class="btn-details" @click="viewDetails(movie._id)">View details</b-button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <b-modal ref="movie-details-modal" title="Movie Details" hide-footer lazy>
+            <div class="d-block text-center">
+                <h5>{{selectedMovie.title}}</h5>
+                <h6 class="text-muted">Released on <strong>{{selectedMovie.releaseDate}}</strong></h6>
+                <hr>
+
+                <small>{{selectedMovie.description}}</small>
+            </div>
+        </b-modal>
     </div>
 </template>
 
@@ -46,7 +56,7 @@
         data() {
             return {
                 movies: [],
-                searchValue: ''
+                selectedMovie: {}
             }
         },
         created() {
@@ -60,6 +70,14 @@
             }, (error) => {
                 console.log(error);
             });
+        },
+        methods: {
+            viewDetails(_id) {
+                if (_id) {
+                    this.selectedMovie = this.movies.find(m => m._id === _id);
+                    this.$refs['movie-details-modal'].show();
+                }
+            }
         }
     }
 </script>
